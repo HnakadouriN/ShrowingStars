@@ -124,8 +124,8 @@ GameObject:
   - component: {fileID: 83965719}
   - component: {fileID: 83965718}
   - component: {fileID: 83965717}
-  - component: {fileID: 83965721}
   - component: {fileID: 83965722}
+  - component: {fileID: 83965721}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 83965716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 710c0c2854a097243a6c4b6c21f24ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
@@ -250,8 +250,8 @@ GameObject:
   - component: {fileID: 356484525}
   - component: {fileID: 356484524}
   - component: {fileID: 356484523}
-  - component: {fileID: 356484527}
   - component: {fileID: 356484528}
+  - component: {fileID: 356484527}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 356484522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 710c0c2854a097243a6c4b6c21f24ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
@@ -535,8 +535,8 @@ GameObject:
   - component: {fileID: 655075168}
   - component: {fileID: 655075167}
   - component: {fileID: 655075166}
-  - component: {fileID: 655075170}
   - component: {fileID: 655075171}
+  - component: {fileID: 655075170}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 655075165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 710c0c2854a097243a6c4b6c21f24ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
@@ -772,8 +772,8 @@ GameObject:
   - component: {fileID: 998764641}
   - component: {fileID: 998764640}
   - component: {fileID: 998764639}
-  - component: {fileID: 998764643}
   - component: {fileID: 998764644}
+  - component: {fileID: 998764643}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 998764638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 710c0c2854a097243a6c4b6c21f24ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
