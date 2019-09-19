@@ -674,6 +674,11 @@
             </e>
           </e>
         </e>
+        <e p="ShrowStars" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="CubeAppear.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Oculus.VR.csproj" t="IncludeRecursive" />
