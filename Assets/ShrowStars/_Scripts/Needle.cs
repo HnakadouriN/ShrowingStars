@@ -13,9 +13,9 @@ public class Needle : MonoBehaviour
         isLocked = false;
     }
     private void OnCollisionEnter(Collision other) {
-        iBreakable = this.GetComponent<IBreakable>();
+        iBreakable = other.gameObject.GetComponent<IBreakable>();
         if(!isLocked){
-            iBreakable.Break();
+            iBreakable?.Break();
         }
     }
 }
