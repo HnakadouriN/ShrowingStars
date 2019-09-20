@@ -13,7 +13,7 @@ public class BalloonSpawner : MonoBehaviour
     {
         StartCoroutine(SpawnCoroutine());
     }
-    public void SpawnEnd()
+    private void SpawnEnd()
     {
         isEnd = true;
     }
@@ -38,6 +38,7 @@ public class BalloonSpawner : MonoBehaviour
     }
     public IEnumerator BreakCoroutine()
     {
+        SpawnEnd();
         foreach (var breakable in Breakables)
         {
             breakable?.Break();

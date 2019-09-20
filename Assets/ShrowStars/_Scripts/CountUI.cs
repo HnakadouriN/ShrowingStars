@@ -10,7 +10,7 @@ public class CountUI : MonoBehaviour
         text = GetComponent<TextMesh>();
         SetCount(0);
     }
-    void SetCount(int count)
+    public void SetCount(int count)
     {
         text.text = "現在の個数: " + count + "個";
     }
