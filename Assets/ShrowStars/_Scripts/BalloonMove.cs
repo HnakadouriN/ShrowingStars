@@ -18,7 +18,7 @@ namespace ShrowStars._Scripts
         // Update is called once per frame
         void Update()
         {
-            rb.AddForce(Vector3.up * 8f,ForceMode.Force);
+            rb.AddForce(Vector3.up * 0.079f,ForceMode.Force);
             MeasurementTime += Time.deltaTime;
             if (MeasurementTime > DestroyTime)
             {
