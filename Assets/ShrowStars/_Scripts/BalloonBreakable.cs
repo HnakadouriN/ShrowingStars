@@ -9,8 +9,10 @@ public class BalloonBreakable : MonoBehaviour, IBreakable
     private BalloonColor Color;
     [SerializeField]
     private GameObject HaretuPrefab;
+
     public void Break()
     {
+        BalloonCounter.Singleton.AddColor(Color);
         if (HaretuPrefab != null)
         {
             Instantiate(HaretuPrefab, transform.position, Quaternion.identity);
