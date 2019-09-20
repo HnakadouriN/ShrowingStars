@@ -12,7 +12,7 @@ namespace Assets.Moosan.Scripts.Test
             Rigidbody rb = gameObject.GetComponent<Rigidbody>();
             rb.isKinematic = m_grabbedKinematic;
             rb.velocity = linearVelocity / rb.mass;
-            rb.angularVelocity = angularVelocity  * -1f;
+            rb.angularVelocity = angularVelocity  * -5f;
             m_grabbedBy = null;
             m_grabbedCollider = null;
         }

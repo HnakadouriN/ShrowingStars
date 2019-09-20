@@ -681,6 +681,10 @@
             <e p="CubeAppear.cs" t="Include" />
           </e>
         </e>
+        <e p="sryurikennset" t="Include">
+          <e p="README.txt" t="Include" />
+          <e p="Readmejp.txt" t="Include" />
+        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Oculus.VR.csproj" t="IncludeRecursive" />
