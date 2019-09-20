@@ -676,6 +676,8 @@
         </e>
         <e p="ShrowStars" t="Include">
           <e p="_Scripts" t="Include">
+            <e p="BalloonController.cs" t="Include" />
+            <e p="BalloonMove.cs" t="Include" />
             <e p="CubeAppear.cs" t="Include" />
           </e>
         </e>
