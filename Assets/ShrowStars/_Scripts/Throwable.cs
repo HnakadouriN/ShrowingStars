@@ -4,6 +4,7 @@ namespace Assets.Moosan.Scripts.Test
 {
     public class Throwable : OVRGrabbable
     {
+        [SerializeField] private Needle _needle;
         //v = Ft/m
         //v_c = Ft/1 = Ft
         //v = v_c/m
@@ -15,6 +16,7 @@ namespace Assets.Moosan.Scripts.Test
             rb.angularVelocity = angularVelocity  * -5f;
             m_grabbedBy = null;
             m_grabbedCollider = null;
+            _needle.UnLock();
         }
     }
 }
