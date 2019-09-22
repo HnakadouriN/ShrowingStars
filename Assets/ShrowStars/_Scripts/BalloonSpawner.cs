@@ -6,7 +6,6 @@ public class BalloonSpawner : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] Balloons;
-    private List<IBreakable> Breakables = new List<IBreakable>();
     private bool isEnd = false;
     // Start is called before the first frame update
     void Start()
@@ -27,22 +26,15 @@ public class BalloonSpawner : MonoBehaviour
     }
     void Spawn()
     {
-        var prefab = Balloons[(int)(Random.Range(0.0f, 3.0f) / 1)];
-        var AppendPosi = new Vector3(Random.Range(-10, 10), Random.Range(0, 20), Random.Range(-10, 10));
-        Breakables.Add(Instantiate(prefab, AppendPosi, Quaternion.identity).GetComponent<IBreakable>());
+        var prefab = Balloons[(int)(Mathf.Max(0,Random.Range(-1.0f, 3.0f) / 1))];
+        var AppendPosi = new Vector3(Random.Range(-10, 10), Random.Range(0, 10), Random.Range(-10, 10));
+        var obj = Instantiate(prefab, AppendPosi, Quaternion.identity);
+        obj.transform.parent = transform;
     }
 
-    public void Break()
-    {
-
-    }
-    public IEnumerator BreakCoroutine()
+    public void BreakAll()
     {
         SpawnEnd();
-        foreach (var breakable in Breakables)
-        {
-            breakable?.Break();
-            yield return null;
-        }
+        this.BroadcastMessage("Break");
     }
 }

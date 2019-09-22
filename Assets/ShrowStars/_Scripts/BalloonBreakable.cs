@@ -9,10 +9,14 @@ public class BalloonBreakable : MonoBehaviour, IBreakable
     private BalloonColor Color;
     [SerializeField]
     private GameObject HaretuPrefab;
-
+    private bool isEnd = false;
     public void Break()
     {
-        BalloonCounter.Singleton.AddColor(Color);
+        if(isEnd)return;
+        isEnd = true;
+        if(Color == BalloonColor.blue){
+            BalloonCounter.blueCount++;
+        }
         if (HaretuPrefab != null)
         {
             Instantiate(HaretuPrefab, transform.position, Quaternion.identity);

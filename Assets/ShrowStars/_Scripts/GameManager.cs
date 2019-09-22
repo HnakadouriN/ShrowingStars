@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        int cou = BalloonCounter.Singleton.GetColorCount(TagetColor);
+        int cou = BalloonCounter.blueCount;
         countUI.SetCount(cou);
         if(cou == 1)
         {
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     }
     void Clear()
     {
-        spawner.Break();
+        spawner.BreakAll();
         CountUIObj.SetActive(false);
         ClearUIObj.SetActive(true);
     }

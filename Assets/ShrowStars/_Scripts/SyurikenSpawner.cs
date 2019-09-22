@@ -17,7 +17,7 @@ public class SyurikenSpawner : MonoBehaviour
             if(isSpawning)return;
             grabbable = null;
             isSpawning = true;
-            Invoke("Spawn",1.0f);
+            Invoke("Spawn",0.5f);
         }else
         {
             if(isSpawning||grabbable == null)return;

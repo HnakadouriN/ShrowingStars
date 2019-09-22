@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CountUI : MonoBehaviour
 {
-    private TextMesh text;
+    public TextMesh text;
     private void Awake()
     {
         text = GetComponent<TextMesh>();
